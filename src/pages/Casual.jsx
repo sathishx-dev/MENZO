@@ -87,8 +87,7 @@ export default function Casual() {
 
   <div className="icon-links">
     <div className="icon-item dropdown">
-      <a href="#"><i className="fa-solid fa-user"></i></a>
-      <span>Profile</span>
+      <a href="#"><i className="fa-solid fa-user"></i> <span>Profile</span></a>
       <ul className="dropdown-menu">
         <li><a href="/myaccount">My Account</a></li>
         <li><a href="/order">Orders</a></li>
@@ -96,16 +95,13 @@ export default function Casual() {
       </ul>
     </div>
     <div className="icon-item">
-      <a href="/whishlist"><i className="fa-solid fa-heart"></i></a>
-      <span>Wishlist</span>
+      <a href="/whishlist"><i className="fa-solid fa-heart"></i> <span>Wishlist</span></a>
     </div>
     <div className="icon-item">
-      <a href="/bag"><i className="fa-solid fa-bag-shopping"></i></a>
-      <span>Bag</span>
+      <a href="/bag"><i className="fa-solid fa-bag-shopping"></i> <span>Bag</span></a>
     </div>
     <div className="icon-item">
-      <a href="/login"><i className="fa-solid fa-right-to-bracket"></i></a>
-      <span>Login</span>
+      <a href="/login"><i className="fa-solid fa-right-to-bracket"></i> <span>Login</span></a>
     </div>
   </div>
 </nav>

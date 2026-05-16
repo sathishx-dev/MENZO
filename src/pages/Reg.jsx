@@ -1,5 +1,7 @@
 
 import React, { useEffect } from 'react';
+import { FiUser, FiHeart, FiShoppingBag, FiLogIn } from 'react-icons/fi';
+
 
 export default function Reg() {
   useEffect(() => {
@@ -29,7 +31,7 @@ export default function Reg() {
 
   <div className="left-side">
     <div className="logo-container">
-      <img className="logo" src="brand.logo.png" alt="MENZO Logo" />
+      <img className="logo" src="/brand.logo.png" alt="MENZO Logo" />
       <div className="tagline">Confidence in Every Thread</div>
     </div>
   </div>

@@ -1,5 +1,7 @@
 
 import React, { useEffect } from 'react';
+import { FiUser, FiHeart, FiShoppingBag, FiLogIn } from 'react-icons/fi';
+
 
 export default function Home() {
   useEffect(() => {
@@ -27,7 +29,7 @@ export default function Home() {
 <div className="navbar">
 <nav className="nav-wrapper">
   <div className="logo">
-    <img src="brand.logo.png" alt="Logo" />
+    <img src="/brand.logo.png" alt="Logo" />
   </div>
 
   <div className="hamburger">
@@ -87,7 +89,7 @@ export default function Home() {
 
   <div className="icon-links">
     <div className="icon-item dropdown">
-      <a href="#"><i className="fa-solid fa-user"></i> <span>Profile</span></a>
+      <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiUser size={18} /> <span>Profile</span></a>
       <ul className="dropdown-menu">
         <li><a href="/myaccount">My Account</a></li>
         <li><a href="/order">Orders</a></li>
@@ -95,13 +97,13 @@ export default function Home() {
       </ul>
     </div>
     <div className="icon-item">
-      <a href="/whishlist"><i className="fa-solid fa-heart"></i> <span>Wishlist</span></a>
+      <a href="/whishlist" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiHeart size={18} /> <span>Wishlist</span></a>
     </div>
     <div className="icon-item">
-      <a href="/bag"><i className="fa-solid fa-bag-shopping"></i> <span>Bag</span></a>
+      <a href="/bag" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiShoppingBag size={18} /> <span>Bag</span></a>
     </div>
     <div className="icon-item">
-      <a href="/login"><i className="fa-solid fa-right-to-bracket"></i> <span>Login</span></a>
+      <a href="/login" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiLogIn size={18} /> <span>Login</span></a>
     </div>
   </div>
  
@@ -126,7 +128,7 @@ export default function Home() {
       <a href="/newarrial" className="hero-btn">Shop New Arrivals</a>
     </div>
     <div className="hero-img">
-      <img src="hero.img.png" alt="Luxury Fashion" />
+      <img src="/hero.img.png" alt="Luxury Fashion" />
     </div>
   </section>
 
@@ -144,7 +146,7 @@ export default function Home() {
 
   <section className="luxury-spotlight fade-in">
   <div className="spotlight-img">
-    <img src="hero2.png" alt="Green Streetwear Men Style" />
+    <img src="/hero2.png" alt="Green Streetwear Men Style" />
   </div>
   <div className="spotlight-text">
     <h2>Street Luxury, Redefined</h2>
@@ -157,25 +159,25 @@ export default function Home() {
   <p className="section-subtext">Elevate your style with our premium tailored suits.</p>
   <div className="suits-grid">
     <div className="suit-item">
-      <img src="suits1.jpg" alt="Navy Classic Suit" />
+      <img src="/suits1.jpg" alt="Navy Classic Suit" />
       <h3>Navy Classic Suit</h3>
       <p className="price">₹14,999</p>
       <button className="btn-add">Add to Cart</button>
     </div>
     <div className="suit-item">
-      <img src="suits2.jpg" alt="Grey Slim-Fit Suit" />
+      <img src="/suits2.jpg" alt="Grey Slim-Fit Suit" />
       <h3>Grey Slim-Fit Suit</h3>
       <p className="price">₹15,999</p>
       <button className="btn-add">Add to Cart</button>
     </div>
     <div className="suit-item">
-      <img src="suits.3.webp" alt="Ivory Double Breasted" />
+      <img src="/suits.3.webp" alt="Ivory Double Breasted" />
       <h3>Ivory Double-Breasted</h3>
       <p className="price">₹18,499</p>
       <button className="btn-add">Add to Cart</button>
     </div>
     <div className="suit-item">
-      <img src="suit.4.jpg" alt="Black Tuxedo" />
+      <img src="/suit.4.jpg" alt="Black Tuxedo" />
       <h3>Black Tuxedo</h3>
       <p className="price">₹19,999</p>
       <button className="btn-add">Add to Cart</button>

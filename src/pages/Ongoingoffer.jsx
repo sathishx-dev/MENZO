@@ -1,5 +1,7 @@
 
 import React, { useEffect } from 'react';
+import { FiUser, FiHeart, FiShoppingBag, FiLogIn } from 'react-icons/fi';
+
 
 export default function Ongoingoffer() {
   useEffect(() => {
@@ -28,7 +30,7 @@ export default function Ongoingoffer() {
  <div className="navbar">
 <nav className="nav-wrapper">
   <div className="logo">
-    <img src="brand.logo.png" alt="Logo" />
+    <img src="/brand.logo.png" alt="Logo" />
   </div>
 
   <div className="hamburger">
@@ -86,7 +88,7 @@ export default function Ongoingoffer() {
 
   <div className="icon-links">
     <div className="icon-item dropdown">
-      <a href="#"><i className="fa-solid fa-user"></i> <span>Profile</span></a>
+      <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiUser size={18} /> <span>Profile</span></a>
       <ul className="dropdown-menu">
         <li><a href="/myaccount">My Account</a></li>
         <li><a href="/order">Orders</a></li>
@@ -94,13 +96,13 @@ export default function Ongoingoffer() {
       </ul>
     </div>
     <div className="icon-item">
-      <a href="/whishlist"><i className="fa-solid fa-heart"></i> <span>Wishlist</span></a>
+      <a href="/whishlist" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiHeart size={18} /> <span>Wishlist</span></a>
     </div>
     <div className="icon-item">
-      <a href="/bag"><i className="fa-solid fa-bag-shopping"></i> <span>Bag</span></a>
+      <a href="/bag" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiShoppingBag size={18} /> <span>Bag</span></a>
     </div>
     <div className="icon-item">
-      <a href="/login"><i className="fa-solid fa-right-to-bracket"></i> <span>Login</span></a>
+      <a href="/login" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiLogIn size={18} /> <span>Login</span></a>
     </div>
   </div>
 </nav>
@@ -117,7 +119,7 @@ export default function Ongoingoffer() {
     <div className="offer-carousel">
 
       <div className="offer-card">
-        <img src="ongoingoffer.1.jpg" alt="Shirts Offer" />
+        <img src="/ongoingoffer.1.jpg" alt="Shirts Offer" />
         <div className="offer-info">
           <h3>Shirts</h3>
           <p>Style Meets Comfort</p>
@@ -128,7 +130,7 @@ export default function Ongoingoffer() {
 
  
       <div className="offer-card">
-        <img src="ongoingoffer.2.jpg" alt="Pants Offer" />
+        <img src="/ongoingoffer.2.jpg" alt="Pants Offer" />
         <div className="offer-info">
           <h3>Pants</h3>
           <p>Urban Modern Fit</p>
@@ -139,7 +141,7 @@ export default function Ongoingoffer() {
 
   
       <div className="offer-card">
-        <img src="ongoing offer.3.webp" alt="Suits Offer" />
+        <img src="/ongoing offer.3.webp" alt="Suits Offer" />
         <div className="offer-info">
           <h3>Suits</h3>
           <p>Luxury & Elegance</p>
@@ -149,7 +151,7 @@ export default function Ongoingoffer() {
       </div>
 
       <div className="offer-card">
-        <img src="ongoingoffer.4.jpg" alt="Watches Offer" />
+        <img src="/ongoingoffer.4.jpg" alt="Watches Offer" />
         <div className="offer-info">
           <h3>Watches</h3>
           <p>Timeless Style</p>
@@ -160,7 +162,7 @@ export default function Ongoingoffer() {
 
     
       <div className="offer-card">
-        <img src="ongoingoffer.5.jpg" alt="Bags Offer" />
+        <img src="/ongoingoffer.5.jpg" alt="Bags Offer" />
         <div className="offer-info">
           <h3>Bags</h3>
           <p>Travel in Style</p>

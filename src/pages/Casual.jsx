@@ -1,5 +1,7 @@
 
 import React, { useEffect } from 'react';
+import { FiUser, FiHeart, FiShoppingBag, FiLogIn } from 'react-icons/fi';
+
 
 export default function Casual() {
   useEffect(() => {
@@ -29,7 +31,7 @@ export default function Casual() {
   <div className="navbar">
 <nav className="nav-wrapper">
   <div className="logo">
-    <img src="brand.logo.png" alt="Logo" />
+    <img src="/brand.logo.png" alt="Logo" />
   </div>
 
   <div className="hamburger">
@@ -87,7 +89,7 @@ export default function Casual() {
 
   <div className="icon-links">
     <div className="icon-item dropdown">
-      <a href="#"><i className="fa-solid fa-user"></i> <span>Profile</span></a>
+      <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiUser size={18} /> <span>Profile</span></a>
       <ul className="dropdown-menu">
         <li><a href="/myaccount">My Account</a></li>
         <li><a href="/order">Orders</a></li>
@@ -95,13 +97,13 @@ export default function Casual() {
       </ul>
     </div>
     <div className="icon-item">
-      <a href="/whishlist"><i className="fa-solid fa-heart"></i> <span>Wishlist</span></a>
+      <a href="/whishlist" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiHeart size={18} /> <span>Wishlist</span></a>
     </div>
     <div className="icon-item">
-      <a href="/bag"><i className="fa-solid fa-bag-shopping"></i> <span>Bag</span></a>
+      <a href="/bag" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiShoppingBag size={18} /> <span>Bag</span></a>
     </div>
     <div className="icon-item">
-      <a href="/login"><i className="fa-solid fa-right-to-bracket"></i> <span>Login</span></a>
+      <a href="/login" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiLogIn size={18} /> <span>Login</span></a>
     </div>
   </div>
 </nav>
@@ -122,7 +124,7 @@ export default function Casual() {
 
       
       <div className="combo-card">
-        <img src="casual.1.jpg" alt="Casual Combo 1" />
+        <img src="/casual.1.jpg" alt="Casual Combo 1" />
         <h3>Weekend Vibe Combo</h3>
         <p>Graphic T-Shirt + Ripped Jeans + Sneakers</p>
         <div className="price-rating">
@@ -134,7 +136,7 @@ export default function Casual() {
 
       
       <div className="combo-card">
-        <img src="casual.2.webp" alt="Casual Combo 2" />
+        <img src="/casual.2.webp" alt="Casual Combo 2" />
         <h3>Urban Street Combo</h3>
         <p>Oversized Tee + Cargo Joggers + Canvas Shoes</p>
         <div className="price-rating">
@@ -145,7 +147,7 @@ export default function Casual() {
       </div>
 
       <div className="combo-card">
-        <img src="casual.3.jpg" alt="Casual Combo 3" />
+        <img src="/casual.3.jpg" alt="Casual Combo 3" />
         <h3>Denim Day Combo</h3>
         <p>Checked Shirt + Blue Jeans + High Tops</p>
         <div className="price-rating">
@@ -156,7 +158,7 @@ export default function Casual() {
       </div>
 
       <div className="combo-card">
-        <img src="casual.4.png" alt="Casual Combo 4" />
+        <img src="/casual.4.png" alt="Casual Combo 4" />
         <h3>Chill Out Combo</h3>
         <p>Hoodie + Relaxed Fit Shorts + Slides</p>
         <div className="price-rating">

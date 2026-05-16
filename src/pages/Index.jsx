@@ -1,5 +1,7 @@
 
 import React, { useEffect } from 'react';
+import { FiUser, FiHeart, FiShoppingBag, FiLogIn } from 'react-icons/fi';
+
 
 export default function Index() {
   useEffect(() => {
@@ -28,7 +30,7 @@ export default function Index() {
   <section className="video-section">
    
     <video autoPlay muted loop playsInline className="landing-video">
-      <source src="White and Grey Simple Animated Formal Mens Wear Promo Video4555.mov" type="video/mp4" />
+      <source src="/White and Grey Simple Animated Formal Mens Wear Promo Video4555.mov" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 

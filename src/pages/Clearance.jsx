@@ -1,5 +1,7 @@
 
 import React, { useEffect } from 'react';
+import { FiUser, FiHeart, FiShoppingBag, FiLogIn } from 'react-icons/fi';
+
 
 export default function Clearance() {
   useEffect(() => {
@@ -28,7 +30,7 @@ export default function Clearance() {
  <div className="navbar">
 <nav className="nav-wrapper">
   <div className="logo">
-    <img src="brand.logo.png" alt="Logo" />
+    <img src="/brand.logo.png" alt="Logo" />
   </div>
 
   <div className="hamburger">
@@ -86,7 +88,7 @@ export default function Clearance() {
 
   <div className="icon-links">
     <div className="icon-item dropdown">
-      <a href="#"><i className="fa-solid fa-user"></i> <span>Profile</span></a>
+      <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiUser size={18} /> <span>Profile</span></a>
       <ul className="dropdown-menu">
         <li><a href="/myaccount">My Account</a></li>
         <li><a href="/order">Orders</a></li>
@@ -94,13 +96,13 @@ export default function Clearance() {
       </ul>
     </div>
     <div className="icon-item">
-      <a href="/whishlist"><i className="fa-solid fa-heart"></i> <span>Wishlist</span></a>
+      <a href="/whishlist" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiHeart size={18} /> <span>Wishlist</span></a>
     </div>
     <div className="icon-item">
-      <a href="/bag"><i className="fa-solid fa-bag-shopping"></i> <span>Bag</span></a>
+      <a href="/bag" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiShoppingBag size={18} /> <span>Bag</span></a>
     </div>
     <div className="icon-item">
-      <a href="/login"><i className="fa-solid fa-right-to-bracket"></i> <span>Login</span></a>
+      <a href="/login" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiLogIn size={18} /> <span>Login</span></a>
     </div>
   </div>
 </nav>
@@ -120,7 +122,7 @@ export default function Clearance() {
      
       <div className="product-card">
         <span className="sale-tag">40% OFF</span>
-        <img src="clearance.1.webp" alt="Clearance Shirt" />
+        <img src="/clearance.1.webp" alt="Clearance Shirt" />
         <div className="card-content">
           <h3>Classic White Shirt</h3>
           <p>Pure cotton luxury fabric</p>
@@ -132,7 +134,7 @@ export default function Clearance() {
       
       <div className="product-card">
         <span className="sale-tag">50% OFF</span>
-        <img src="clearance.2.webp" alt="Clearance Jacket" />
+        <img src="/clearance.2.webp" alt="Clearance Jacket" />
         <div className="card-content">
           <h3>Wool Blend Jacket</h3>
           <p>Italian cut, perfect for evenings</p>
@@ -144,7 +146,7 @@ export default function Clearance() {
       
       <div className="product-card">
         <span className="sale-tag">30% OFF</span>
-        <img src="clearance.3.webp" alt="Clearance Shoes" />
+        <img src="/clearance.3.webp" alt="Clearance Shoes" />
         <div className="card-content">
           <h3>Tan Oxford Shoes</h3>
           <p>Handcrafted leather shoes</p>
@@ -156,7 +158,7 @@ export default function Clearance() {
       
       <div className="product-card">
         <span className="sale-tag">45% OFF</span>
-        <img src="clearance.4.webp" alt="Clearance Hoodie" />
+        <img src="/clearance.4.webp" alt="Clearance Hoodie" />
         <div className="card-content">
           <h3>Premium Grey Hoodie</h3>
           <p>Comfy and stylish winterwear</p>

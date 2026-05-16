@@ -1,5 +1,7 @@
 
 import React, { useEffect } from 'react';
+import { FiUser, FiHeart, FiShoppingBag, FiLogIn } from 'react-icons/fi';
+
 
 export default function Formal() {
   useEffect(() => {
@@ -29,7 +31,7 @@ export default function Formal() {
   <div className="navbar">
 <nav className="nav-wrapper">
   <div className="logo">
-    <img src="brand.logo.png" alt="Logo" />
+    <img src="/brand.logo.png" alt="Logo" />
   </div>
 
   <div className="hamburger">
@@ -87,7 +89,7 @@ export default function Formal() {
 
   <div className="icon-links">
     <div className="icon-item dropdown">
-      <a href="#"><i className="fa-solid fa-user"></i> <span>Profile</span></a>
+      <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiUser size={18} /> <span>Profile</span></a>
       <ul className="dropdown-menu">
         <li><a href="/myaccount">My Account</a></li>
         <li><a href="/order">Orders</a></li>
@@ -95,13 +97,13 @@ export default function Formal() {
       </ul>
     </div>
     <div className="icon-item">
-      <a href="/whishlist"><i className="fa-solid fa-heart"></i> <span>Wishlist</span></a>
+      <a href="/whishlist" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiHeart size={18} /> <span>Wishlist</span></a>
     </div>
     <div className="icon-item">
-      <a href="/bag"><i className="fa-solid fa-bag-shopping"></i> <span>Bag</span></a>
+      <a href="/bag" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiShoppingBag size={18} /> <span>Bag</span></a>
     </div>
     <div className="icon-item">
-      <a href="/login"><i className="fa-solid fa-right-to-bracket"></i> <span>Login</span></a>
+      <a href="/login" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiLogIn size={18} /> <span>Login</span></a>
     </div>
   </div>
 </nav>
@@ -119,7 +121,7 @@ export default function Formal() {
 
      
       <div className="combo-card">
-        <img src="formal.1.jpg" alt="Formal Combo 1" />
+        <img src="/formal.1.jpg" alt="Formal Combo 1" />
         <h3>Elegant Executive Combo</h3>
         <p>White Shirt + Navy Pant + Black Oxfords</p>
         <div className="price-rating">
@@ -131,7 +133,7 @@ export default function Formal() {
 
       
       <div className="combo-card">
-        <img src="formal.2.webp" alt="Formal Combo 2" />
+        <img src="/formal.2.webp" alt="Formal Combo 2" />
         <h3>Premium Charcoal Combo</h3>
         <p>Charcoal Shirt + Grey Pant + Brown Brogues</p>
         <div className="price-rating">
@@ -143,7 +145,7 @@ export default function Formal() {
 
       
       <div className="combo-card">
-        <img src="formal.3.jpg" alt="Formal Combo 3" />
+        <img src="/formal.3.jpg" alt="Formal Combo 3" />
         <h3>Boardroom Blue Combo</h3>
         <p>Sky Blue Shirt + Black Pant + Loafers</p>
         <div className="price-rating">
@@ -155,7 +157,7 @@ export default function Formal() {
 
    
       <div className="combo-card">
-        <img src="formal.4.jpg" alt="Formal Combo 4" />
+        <img src="/formal.4.jpg" alt="Formal Combo 4" />
         <h3>Minimalist Grey Combo</h3>
         <p>Light Grey Shirt + Beige Pant + White Derbys</p>
         <div className="price-rating">

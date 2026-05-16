@@ -1,5 +1,7 @@
 
 import React, { useEffect } from 'react';
+import { FiUser, FiHeart, FiShoppingBag, FiLogIn } from 'react-icons/fi';
+
 
 export default function Accessories() {
   useEffect(() => {
@@ -28,7 +30,7 @@ export default function Accessories() {
  <div className="navbar">
 <nav className="nav-wrapper">
   <div className="logo">
-    <img src="brand.logo.png" alt="Logo" />
+    <img src="/brand.logo.png" alt="Logo" />
   </div>
 
   <div className="hamburger">
@@ -86,7 +88,7 @@ export default function Accessories() {
 
   <div className="icon-links">
     <div className="icon-item dropdown">
-      <a href="#"><i className="fa-solid fa-user"></i> <span>Profile</span></a>
+      <a href="#" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiUser size={18} /> <span>Profile</span></a>
       <ul className="dropdown-menu">
         <li><a href="/myaccount">My Account</a></li>
         <li><a href="/order">Orders</a></li>
@@ -94,13 +96,13 @@ export default function Accessories() {
       </ul>
     </div>
     <div className="icon-item">
-      <a href="/whishlist"><i className="fa-solid fa-heart"></i> <span>Wishlist</span></a>
+      <a href="/whishlist" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiHeart size={18} /> <span>Wishlist</span></a>
     </div>
     <div className="icon-item">
-      <a href="/bag"><i className="fa-solid fa-bag-shopping"></i> <span>Bag</span></a>
+      <a href="/bag" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiShoppingBag size={18} /> <span>Bag</span></a>
     </div>
     <div className="icon-item">
-      <a href="/login"><i className="fa-solid fa-right-to-bracket"></i> <span>Login</span></a>
+      <a href="/login" style={{ display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none', color: 'inherit' }}><FiLogIn size={18} /> <span>Login</span></a>
     </div>
   </div>
 </nav>
@@ -120,7 +122,7 @@ export default function Accessories() {
     <div className="product-grid">
     
       <div className="product-card">
-        <img src="watch1.jpg" alt="Watch" />
+        <img src="/watch1.jpg" alt="Watch" />
         <h3>Luxury Chrono Watch</h3>
         <p className="price">$299</p>
         <div className="rating">⭐⭐⭐⭐☆</div>
@@ -129,25 +131,25 @@ export default function Accessories() {
           <button><i className="fa fa-shopping-bag"></i></button>
         </div>
       </div>
-      <div className="product-card"><img src="watch2.jpg" alt="Watch" /><h3>Classic Black Dial</h3><p className="price">$349</p><div className="rating">⭐⭐⭐⭐⭐</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
-      <div className="product-card"><img src="watch3.jpg" alt="Watch" /><h3>Menzo Metal Strap</h3><p className="price">$289</p><div className="rating">⭐⭐⭐⭐☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
-      <div className="product-card"><img src="watch4.jpg" alt="Watch" /><h3>Rose Gold Timer</h3><p className="price">$379</p><div className="rating">⭐⭐⭐⭐⭐</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
+      <div className="product-card"><img src="/watch2.jpg" alt="Watch" /><h3>Classic Black Dial</h3><p className="price">$349</p><div className="rating">⭐⭐⭐⭐⭐</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
+      <div className="product-card"><img src="/watch3.jpg" alt="Watch" /><h3>Menzo Metal Strap</h3><p className="price">$289</p><div className="rating">⭐⭐⭐⭐☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
+      <div className="product-card"><img src="/watch4.jpg" alt="Watch" /><h3>Rose Gold Timer</h3><p className="price">$379</p><div className="rating">⭐⭐⭐⭐⭐</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
     </div>
 
     <h2 className="section-title">Bags</h2>
     <div className="product-grid">
-      <div className="product-card"><img src="bag1.jpg" alt="Bag" /><h3>Tan Leather Bag</h3><p className="price">$199</p><div className="rating">⭐⭐⭐⭐☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
-      <div className="product-card"><img src="bag2.jpg" alt="Bag" /><h3>Black Travel Duffel</h3><p className="price">$239</p><div className="rating">⭐⭐⭐⭐⭐</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
-      <div className="product-card"><img src="bag3.jpg" alt="Bag" /><h3>Urban Streetpack</h3><p className="price">$179</p><div className="rating">⭐⭐⭐☆☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
-      <div className="product-card"><img src="bag4.jpg" alt="Bag" /><h3>Grey Office Brief</h3><p className="price">$259</p><div className="rating">⭐⭐⭐⭐☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
+      <div className="product-card"><img src="/bag1.jpg" alt="Bag" /><h3>Tan Leather Bag</h3><p className="price">$199</p><div className="rating">⭐⭐⭐⭐☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
+      <div className="product-card"><img src="/bag2.jpg" alt="Bag" /><h3>Black Travel Duffel</h3><p className="price">$239</p><div className="rating">⭐⭐⭐⭐⭐</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
+      <div className="product-card"><img src="/bag3.jpg" alt="Bag" /><h3>Urban Streetpack</h3><p className="price">$179</p><div className="rating">⭐⭐⭐☆☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
+      <div className="product-card"><img src="/bag4.jpg" alt="Bag" /><h3>Grey Office Brief</h3><p className="price">$259</p><div className="rating">⭐⭐⭐⭐☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
     </div>
 
     <h2 className="section-title">Sunglasses</h2>
     <div className="product-grid">
-      <div className="product-card"><img src="glass1.jpg" alt="Sunglasses" /><h3>Polarized Shades</h3><p className="price">$99</p><div className="rating">⭐⭐⭐⭐⭐</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
-      <div className="product-card"><img src="glass2.jpg" alt="Sunglasses" /><h3>Classic Aviator</h3><p className="price">$129</p><div className="rating">⭐⭐⭐⭐☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
-      <div className="product-card"><img src="glass3.jpg" alt="Sunglasses" /><h3>Street Round Frames</h3><p className="price">$109</p><div className="rating">⭐⭐⭐☆☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
-      <div className="product-card"><img src="glass4.jpg" alt="Sunglasses" /><h3>Brown Tint Wayfarer</h3><p className="price">$119</p><div className="rating">⭐⭐⭐⭐☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
+      <div className="product-card"><img src="/glass1.jpg" alt="Sunglasses" /><h3>Polarized Shades</h3><p className="price">$99</p><div className="rating">⭐⭐⭐⭐⭐</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
+      <div className="product-card"><img src="/glass2.jpg" alt="Sunglasses" /><h3>Classic Aviator</h3><p className="price">$129</p><div className="rating">⭐⭐⭐⭐☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
+      <div className="product-card"><img src="/glass3.jpg" alt="Sunglasses" /><h3>Street Round Frames</h3><p className="price">$109</p><div className="rating">⭐⭐⭐☆☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
+      <div className="product-card"><img src="/glass4.jpg" alt="Sunglasses" /><h3>Brown Tint Wayfarer</h3><p className="price">$119</p><div className="rating">⭐⭐⭐⭐☆</div><div className="actions"><button><i className="fa fa-heart"></i></button><button><i className="fa fa-shopping-bag"></i></button></div></div>
     </div>
   </section>
     <footer className="footer">

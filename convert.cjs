@@ -54,6 +54,7 @@ htmlFiles.forEach(file => {
   // Remove onclick attributes as they will be handled via global delegation
   bodyContent = bodyContent.replace(/onclick="[^"]*"/gi, '');
 
+  
   const componentName = file.replace('.html', '').charAt(0).toUpperCase() + file.replace('.html', '').slice(1).replace(/[^a-zA-Z0-9]/g, '');
 
   const jsxFile = `

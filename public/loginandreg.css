@@ -1,0 +1,247 @@
+
+:root {
+  --topbar-section: #FFFFFF;
+  --maintext: #2E2A47;
+  --smalltext: #8D7E96;
+  --button: #5C5470;
+  --background: #FFFFFF;
+  --input-bg: #F3F2F7;
+  --input-border: #D1CFD7;
+  --hover-shadow: rgba(92, 84, 112, 0.3);
+  --radius: 12px;
+  --transition: 0.3s ease;
+}
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+html, body {
+  height: 100%;
+  background-color: var(--background);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.left-side {
+  flex: 1;
+  position: relative;
+  color: var(--button);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+  background-color: var(--background);
+}
+
+.left-side::before {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%;
+  height: 100%;
+  background-image: url("beautiful-men-fashion-wooden-background_74190-4877.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: slideIn 2s forwards ease;
+  z-index: 0;
+  opacity: 0.2;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  opacity: 0;
+  animation: fadeIn 1s forwards ease;
+  animation-delay: 2s;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 16px;
+  animation: fadeIn 1s forwards ease;
+  animation-delay: 1.5s;
+}
+
+.tagline {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeIn 1s forwards ease;
+  animation-delay: 2.5s;
+  color: var(--maintext);
+}
+
+.right-side {
+  flex: 1;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background: var(--background);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  max-width: 350px;
+  color: var(--maintext);
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 3s;
+  opacity: 0;
+  border: 1px solid var(--input-border);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--button);
+}
+
+.welcome-text {
+  text-align: center;
+  color: var(--smalltext);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: var(--maintext);
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  color: var(--maintext);
+  font-size: 15px;
+  transition: var(--transition);
+}
+
+.login-form input::placeholder {
+  color: var(--smalltext);
+  font-size: 14px;
+}
+
+.login-form input:focus {
+  outline: none;
+  border: 1px solid var(--button);
+  box-shadow: 0 0 0 3px var(--hover-shadow);
+  background-color: #fff;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--button);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: var(--transition);
+}
+
+.login-form button:hover {
+  background-color: #453C5C;
+  box-shadow: 0 0 15px var(--hover-shadow);
+  transform: scale(1.02);
+}
+
+.top-buttons {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+}
+
+.top-buttons .btn {
+  padding: 5px 12px;
+  border: 1px solid var(--button);
+  color: var(--button);
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.top-buttons .btn:hover {
+  background-color: var(--button);
+  color: #fff;
+  box-shadow: 0 0 10px var(--hover-shadow);
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-side {
+    height: 40vh;
+  }
+
+  .right-side {
+    height: 60vh;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .tagline {
+    font-size: 20px;
+  }
+
+  .top-buttons {
+    top: 10px;
+    right: 15px;
+    gap: 8px;
+  }
+
+  .top-buttons .btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
